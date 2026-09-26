@@ -1,2 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
+@import 'tailwindcss';
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #252920;
+  background: #faf9f4;
+  font-synthesis: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 20rem;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+::selection {
+  background: #e9dfa5;
+  color: #343b28;
+}
+:focus-visible {
+  outline: 0.1875rem solid #5d7046;
+  outline-offset: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

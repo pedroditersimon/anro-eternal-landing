@@ -1,0 +1,25 @@
+:host {
+  position: relative;
+  display: block;
+  min-width: 0;
+  isolation: isolate;
+}
+
+:host:nth-child(2n) .decoration {
+  right: auto;
+  left: 0.5rem;
+  transform: rotate(-22deg);
+}
+
+:host:hover .decoration {
+  transform: translateY(-0.75rem) rotate(22deg) scale(1.06);
+}
+:host:nth-child(2n):hover .decoration {
+  transform: translateY(-0.75rem) rotate(-26deg) scale(1.06);
+}
+
+@media (max-width: 47.5rem) {
+  :host:nth-child(2n) .decoration {
+    left: 0.25rem;
+  }
+}

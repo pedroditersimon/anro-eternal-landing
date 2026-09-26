@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 570" fill="none">
+  <path d="M257 458 135 198M257 458l107-269M257 458 245 143M257 458 340 265M257 458 164 294" stroke="#748a61" stroke-width="8" stroke-linecap="round"/>
+  <path d="M226 347c-66-3-92-45-100-74 67-7 98 26 100 74ZM293 360c54-17 75-57 76-83-58 7-81 41-76 83ZM245 308c-58-17-77-51-78-73 57 6 79 37 78 73Z" fill="#90a974"/>
+  <g transform="translate(115 174) scale(.55)"><circle r="94" fill="#e7ab45"/><circle r="72" fill="#f4ce72"/><circle r="48" fill="#66442e"/></g>
+  <g transform="translate(366 173) scale(.65)"><circle r="94" fill="#e9b14d"/><circle r="72" fill="#f4d17e"/><circle r="47" fill="#694932"/></g>
+  <g transform="translate(247 130) scale(.78)"><circle r="94" fill="#e6aa3f"/><circle r="72" fill="#f4cd74"/><circle r="49" fill="#6c4d32"/></g>
+  <g transform="translate(164 283) scale(.41)"><circle r="94" fill="#f0c36c"/><circle r="64" fill="#f9dc8d"/><circle r="37" fill="#795839"/></g>
+  <g transform="translate(342 259) scale(.46)"><circle r="94" fill="#edb755"/><circle r="66" fill="#f5cf74"/><circle r="40" fill="#745136"/></g>
+  <path d="m173 372 83 113 87-113-170 0Z" fill="#e6d7b9"/><path d="m173 372 83 113-22-114-61 1ZM343 372l-87 113 22-114 65 1Z" fill="#f3e8d3"/><path d="M237 416c19 6 33 6 43 0" stroke="#ac8f69" stroke-width="7" stroke-linecap="round"/>
+</svg>

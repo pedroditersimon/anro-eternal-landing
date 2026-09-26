@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs><path id="p" d="M120 96C108 73 108 30 120 13c12 17 12 60 0 83Z" fill="#ee9473"/><path id="q" d="M120 101c-7-18-7-41 0-51 7 10 7 33 0 51Z" fill="#f6bf91"/></defs>
+  <g><use href="#p"/><use href="#p" transform="rotate(30 120 120)"/><use href="#p" transform="rotate(60 120 120)"/><use href="#p" transform="rotate(90 120 120)"/><use href="#p" transform="rotate(120 120 120)"/><use href="#p" transform="rotate(150 120 120)"/><use href="#p" transform="rotate(180 120 120)"/><use href="#p" transform="rotate(210 120 120)"/><use href="#p" transform="rotate(240 120 120)"/><use href="#p" transform="rotate(270 120 120)"/><use href="#p" transform="rotate(300 120 120)"/><use href="#p" transform="rotate(330 120 120)"/></g>
+  <g><use href="#q" transform="rotate(15 120 120)"/><use href="#q" transform="rotate(60 120 120)"/><use href="#q" transform="rotate(105 120 120)"/><use href="#q" transform="rotate(150 120 120)"/><use href="#q" transform="rotate(195 120 120)"/><use href="#q" transform="rotate(240 120 120)"/><use href="#q" transform="rotate(285 120 120)"/><use href="#q" transform="rotate(330 120 120)"/></g>
+  <circle cx="120" cy="120" r="28" fill="#6d4938"/><circle cx="120" cy="120" r="21" fill="#9c6a48"/><circle cx="120" cy="120" r="14" fill="#bd8b5b"/>
+</svg>

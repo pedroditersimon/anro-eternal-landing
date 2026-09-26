@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs><path id="p" d="M120 100C105 83 101 44 120 27c19 17 15 56 0 73Z" fill="#fffdf4" stroke="#e9e7d9" stroke-width="1"/></defs>
+  <g><use href="#p"/><use href="#p" transform="rotate(36 120 120)"/><use href="#p" transform="rotate(72 120 120)"/><use href="#p" transform="rotate(108 120 120)"/><use href="#p" transform="rotate(144 120 120)"/><use href="#p" transform="rotate(180 120 120)"/><use href="#p" transform="rotate(216 120 120)"/><use href="#p" transform="rotate(252 120 120)"/><use href="#p" transform="rotate(288 120 120)"/><use href="#p" transform="rotate(324 120 120)"/></g>
+  <circle cx="120" cy="120" r="27" fill="#ecc770"/><circle cx="120" cy="120" r="19" fill="#f5d886"/>
+</svg>
