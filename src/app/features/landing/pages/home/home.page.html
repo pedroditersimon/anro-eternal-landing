@@ -1,52 +1,169 @@
 <header class="sticky top-0 z-5 bg-[#faf9f4]" id="inicio">
-  <div class="mx-auto flex h-24 w-[min(100%-6rem,80rem)] items-center justify-between border-b border-[#e9e9df] max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:h-18 max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]">
-    <a href="#inicio" class="font-[Georgia] text-4xl leading-none font-bold tracking-[-0.095em] max-[47.5rem]:text-[1.9375rem]" aria-label="AnRo, ir al inicio">An<span class="italic">R</span>o<span class="text-[#879760]">.</span></a>
-    <button #cartTrigger class="flex items-center gap-2.5 text-[0.8125rem] font-bold" type="button" (click)="cartOpen.set(true)" [attr.aria-label]="'Abrir carrito, ' + cart.count() + (cart.count() === 1 ? ' producto' : ' productos')">
+  <div
+    class="mx-auto flex h-24 w-[min(100%-6rem,80rem)] items-center justify-between border-b border-[#e9e9df] max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:h-18 max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]"
+  >
+    <a
+      href="#inicio"
+      class="font-[Georgia] text-4xl leading-none font-bold tracking-[-0.095em] max-[47.5rem]:text-[1.9375rem]"
+      aria-label="AnRo, ir al inicio"
+      >An<span class="italic">R</span>o<span class="text-[#879760]">.</span></a
+    >
+    <button
+      #cartTrigger
+      class="flex items-center gap-2.5 text-[0.8125rem] font-bold"
+      type="button"
+      (click)="cartOpen.set(true)"
+      [attr.aria-label]="
+        'Abrir carrito, ' + cart.count() + (cart.count() === 1 ? ' producto' : ' productos')
+      "
+    >
       <svg lucideShoppingBag [size]="21" [strokeWidth]="1.7" aria-hidden="true"></svg>
-      <span class="max-[27.5rem]:hidden">Carrito</span><span class="grid size-5.5 place-items-center rounded-full bg-[#e8ebdb] text-[0.6875rem] text-[#495c36]">{{ cart.count() }}</span>
+      <span class="max-[27.5rem]:hidden">Carrito</span
+      ><span
+        class="grid size-5.5 place-items-center rounded-full bg-[#e8ebdb] text-[0.6875rem] text-[#495c36]"
+        >{{ cart.count() }}</span
+      >
     </button>
   </div>
 </header>
 
 <main>
   <section class="relative overflow-hidden" aria-labelledby="hero-title">
-    <div class="relative mx-auto flex min-h-[29.375rem] w-[min(100%-6rem,80rem)] items-center justify-center py-20 max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:min-h-[24.375rem] max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)] max-[47.5rem]:pt-15 max-[47.5rem]:pb-[5.9375rem] max-[27.5rem]:min-h-[23.125rem]">
+    <div
+      class="relative mx-auto flex min-h-[29.375rem] w-[min(100%-6rem,80rem)] items-center justify-center py-20 max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:min-h-[24.375rem] max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)] max-[47.5rem]:pt-15 max-[47.5rem]:pb-[5.9375rem] max-[27.5rem]:min-h-[23.125rem]"
+    >
       <div class="relative z-2 text-center">
-        <h1 id="hero-title" class="mb-5.5 text-[clamp(3.625rem,6vw,5.5rem)] leading-[1.08] font-normal tracking-[-0.055em] max-[47.5rem]:text-[clamp(3.0625rem,9.3vw,4.75rem)] max-[27.5rem]:text-[3.0625rem]">Regalos que<br /><em class="font-[Georgia] font-normal tracking-[-0.065em] text-[#657b4a]">cuentan</em> historias<span class="text-[#d6b65d]">.</span></h1>
-        <p class="text-base leading-[1.7] text-[#777a70] max-[47.5rem]:text-sm">Ramos de flores artesanales para regalar y compartir.</p>
-        <a class="mt-7.5 inline-flex min-h-13.75 items-center justify-center gap-2.5 rounded-sm bg-[#53683e] px-6.75 text-[0.8125rem] font-bold text-white transition-[transform,background] duration-250 hover:-translate-y-0.75 hover:bg-[#394e2a]" href="#productos">Ver productos <svg lucideArrowDown [size]="18" aria-hidden="true" class="shrink-0"></svg></a>
+        <h1
+          id="hero-title"
+          class="mb-5.5 text-[clamp(3.625rem,6vw,5.5rem)] leading-[1.08] font-normal tracking-[-0.055em] max-[47.5rem]:text-[clamp(3.0625rem,9.3vw,4.75rem)] max-[27.5rem]:text-[3.0625rem]"
+        >
+          Regalos que<br /><em class="font-[Georgia] font-normal tracking-[-0.065em] text-[#657b4a]"
+            >cuentan</em
+          >
+          historias<span class="text-[#d6b65d]">.</span>
+        </h1>
+        <p class="text-base leading-[1.7] text-[#777a70] max-[47.5rem]:text-sm">
+          Ramos de flores artesanales para regalar y compartir.
+        </p>
+        <a
+          class="mt-7.5 inline-flex min-h-13.75 items-center justify-center gap-2.5 rounded-sm bg-[#53683e] px-6.75 text-[0.8125rem] font-bold text-white transition-[transform,background] duration-250 hover:-translate-y-0.75 hover:bg-[#394e2a]"
+          href="#productos"
+          >Ver productos <svg lucideArrowDown [size]="18" aria-hidden="true" class="shrink-0"></svg
+        ></a>
       </div>
       <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-        <img class="floating-product absolute -right-11.25 -bottom-11 w-62.5 drop-shadow-[0_1.25rem_1.125rem_#51432218] max-[65.625rem]:-right-13.75 max-[65.625rem]:w-47.5 max-[47.5rem]:-right-7.5 max-[47.5rem]:-bottom-6 max-[47.5rem]:w-31.25" src="/assets/decor/sol-de-tarde.svg" alt="" fetchpriority="high" />
-        <img class="floating-flower flower-one absolute top-[19%] left-[5%] z-2 w-26.25 max-[65.625rem]:left-0 max-[47.5rem]:top-[9%] max-[47.5rem]:w-16.5 max-[27.5rem]:w-13.75" src="/assets/decor/daisy.svg" alt="" />
-        <img class="floating-flower flower-two absolute bottom-[10%] left-0 z-2 w-22.5 max-[47.5rem]:bottom-[12%] max-[47.5rem]:-left-2 max-[47.5rem]:w-14.5 max-[27.5rem]:w-12.5" src="/assets/decor/gerbera.svg" alt="" />
+        <img
+          class="floating-product absolute -right-11.25 -bottom-16 w-62.5 drop-shadow-[0_1.25rem_1.125rem_#51432218] max-[65.625rem]:-right-2 max-[65.625rem]:w-47.5 max-[47.5rem]:-right-7.5 max-[47.5rem]:-bottom-10 max-[47.5rem]:w-31.25"
+          src="/assets/decor/sol-de-tarde.svg"
+          alt=""
+          fetchpriority="high"
+        />
+        <img
+          class="floating-flower flower-one absolute top-[19%] left-[12%] z-2 w-26.25 max-[47.5rem]:top-[9%] max-[47.5rem]:-left-[4%] max-[47.5rem]:w-16.5 max-[27.5rem]:w-13.75"
+          src="/assets/decor/daisy.svg"
+          alt=""
+        />
+        <img
+          class="floating-flower flower-two absolute bottom-[10%] left-[8%] z-2 w-22.5 max-[47.5rem]:bottom-[12%] max-[47.5rem]:left-[5%] max-[47.5rem]:w-14.5 max-[27.5rem]:w-12.5"
+          src="/assets/decor/gerbera.svg"
+          alt=""
+        />
       </div>
     </div>
   </section>
 
-  <section class="scroll-mt-24 py-31 max-[47.5rem]:scroll-mt-18 max-[47.5rem]:py-20.75" id="productos" aria-labelledby="catalog-title">
-    <div class="mx-auto w-[min(100%-6rem,80rem)] max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]">
+  <section
+    class="scroll-mt-24 py-31 max-[47.5rem]:scroll-mt-18 max-[47.5rem]:py-20.75"
+    id="productos"
+    aria-labelledby="catalog-title"
+  >
+    <div
+      class="mx-auto w-[min(100%-6rem,80rem)] max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]"
+    >
       <div class="mb-11.25 max-[47.5rem]:mb-8">
-        <h2 id="catalog-title" class="text-[clamp(2.75rem,4.5vw,4.1875rem)] leading-[1.12] font-normal tracking-[-0.055em] max-[47.5rem]:text-[clamp(2.6875rem,8vw,3.875rem)]">Nuestros <em class="font-[Georgia] font-normal tracking-[-0.065em] text-[#667e4d]">ramos.</em></h2>
+        <h2
+          id="catalog-title"
+          class="text-[clamp(2.75rem,4.5vw,4.1875rem)] leading-[1.12] font-normal tracking-[-0.055em] max-[47.5rem]:text-[clamp(2.6875rem,8vw,3.875rem)]"
+        >
+          Nuestros
+          <em class="font-[Georgia] font-normal tracking-[-0.065em] text-[#667e4d]">ramos.</em>
+        </h2>
       </div>
-      <div class="mx-auto grid w-full max-w-285 grid-cols-3 gap-x-5.5 gap-y-13 max-[65.625rem]:gap-x-4 max-[65.625rem]:gap-y-9.5 max-[47.5rem]:grid-cols-2 max-[47.5rem]:gap-x-3.75 max-[47.5rem]:gap-y-7.5 max-[27.5rem]:gap-x-3">
+      <div
+        class="mx-auto grid w-full max-w-285 grid-cols-3 gap-x-5.5 gap-y-13 max-[65.625rem]:gap-x-4 max-[65.625rem]:gap-y-9.5 max-[47.5rem]:grid-cols-2 max-[47.5rem]:gap-x-3.75 max-[47.5rem]:gap-y-7.5 max-[27.5rem]:gap-x-3"
+      >
         @for (product of products; track product.id; let i = $index) {
-          <app-product-card [product]="product" [decoration]="decorations[i % decorations.length]" (add)="cart.add($event)" (openCart)="cartOpen.set(true)" />
+          <app-product-card
+            [product]="product"
+            [decoration]="decorations[i % decorations.length]"
+            (add)="cart.add($event)"
+            (openCart)="cartOpen.set(true)"
+          />
         }
       </div>
-      <p class="mt-15.5 text-center text-sm text-[#888a7d] max-[47.5rem]:mt-11">¿Querés un ramo personalizado? <a class="ml-1 inline-flex items-center gap-0.75 border-b border-[#738457] font-bold text-[#526641]" [href]="contactUrl" target="_blank" rel="noopener noreferrer">Contanos por WhatsApp <svg lucideArrowUpRight [size]="15" aria-hidden="true"></svg></a></p>
+      <p class="mt-15.5 text-center text-sm text-[#888a7d] max-[47.5rem]:mt-11">
+        ¿Querés un ramo personalizado?
+        <a
+          class="ml-1 inline-flex items-center gap-0.75 border-b border-[#738457] font-bold text-[#526641]"
+          [href]="contactUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Contanos por WhatsApp <svg lucideArrowUpRight [size]="15" aria-hidden="true"></svg
+        ></a>
+      </p>
     </div>
   </section>
 
-  <section class="scroll-mt-24 overflow-hidden bg-[#f1edda] max-[47.5rem]:scroll-mt-18" id="entrega" aria-label="Opciones de entrega">
-    <div class="relative mx-auto flex min-h-43.75 w-[min(100%-6rem,80rem)] items-center justify-center text-center max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:min-h-36.25 max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]">
-      <img class="floating-flower flower-delivery-left pointer-events-none absolute -bottom-7 -left-6.25 w-35 max-[47.5rem]:-bottom-5 max-[47.5rem]:-left-8.75 max-[47.5rem]:w-25" src="/assets/decor/sunflower.svg" alt="" aria-hidden="true" loading="lazy" />
-      <p class="relative z-1 font-[Georgia] text-[clamp(1.125rem,2vw,1.5625rem)] max-[27.5rem]:max-w-60 max-[27.5rem]:text-base max-[27.5rem]:leading-[1.6]">Retiro a coordinar <span class="px-4 text-[#879b68] max-[27.5rem]:px-1.25" aria-hidden="true">·</span> Envíos a cotizar según tu zona</p>
-      <img class="floating-flower flower-delivery-right pointer-events-none absolute -top-7 -right-6.25 w-35 max-[47.5rem]:-top-5 max-[47.5rem]:-right-8.75 max-[47.5rem]:w-25" src="/assets/decor/gerbera.svg" alt="" aria-hidden="true" loading="lazy" />
+  <section
+    class="scroll-mt-24 overflow-hidden bg-[#f1edda] max-[47.5rem]:scroll-mt-18"
+    id="entrega"
+    aria-label="Opciones de entrega"
+  >
+    <div
+      class="relative mx-auto flex min-h-43.75 w-[min(100%-6rem,80rem)] items-center justify-center text-center max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:min-h-36.25 max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]"
+    >
+      <img
+        class="floating-flower flower-delivery-left pointer-events-none absolute -bottom-7 -left-6.25 w-35 max-[47.5rem]:-bottom-5 max-[47.5rem]:-left-8.75 max-[47.5rem]:w-25"
+        src="/assets/decor/sunflower.svg"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+      />
+      <p
+        class="relative z-1 font-[Georgia] text-[clamp(1.125rem,2vw,1.5625rem)] max-[27.5rem]:max-w-60 max-[27.5rem]:text-base max-[27.5rem]:leading-[1.6]"
+      >
+        Retiro a coordinar
+        <span class="px-4 text-[#879b68] max-[27.5rem]:px-1.25" aria-hidden="true">·</span> Envíos a
+        cotizar según tu zona
+      </p>
+      <img
+        class="floating-flower flower-delivery-right pointer-events-none absolute -top-7 -right-6.25 w-35 max-[47.5rem]:-top-5 max-[47.5rem]:-right-8.75 max-[47.5rem]:w-25"
+        src="/assets/decor/gerbera.svg"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+      />
     </div>
   </section>
 </main>
 
-<footer><div class="mx-auto flex min-h-28.25 w-[min(100%-6rem,80rem)] items-center justify-between gap-5 max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:min-h-24 max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]"><a href="#inicio" class="font-[Georgia] text-[1.8125rem] leading-none font-bold tracking-[-0.095em] transition-colors duration-200 hover:text-[#677d49]" aria-label="AnRo, ir al inicio">An<span class="italic">R</span>o<span class="text-[#879760]">.</span></a><a href="#inicio" class="inline-flex items-center gap-1 text-xs transition-colors duration-200 hover:text-[#677d49]">Volver arriba <svg lucideArrowUp [size]="15" aria-hidden="true"></svg></a></div></footer>
+<footer>
+  <div
+    class="mx-auto flex min-h-28.25 w-[min(100%-6rem,80rem)] items-center justify-between gap-5 max-[65.625rem]:w-[min(100%-3.75rem,80rem)] max-[47.5rem]:min-h-24 max-[47.5rem]:w-[min(100%-2.5rem,37.5rem)]"
+  >
+    <a
+      href="#inicio"
+      class="font-[Georgia] text-[1.8125rem] leading-none font-bold tracking-[-0.095em] transition-colors duration-200 hover:text-[#677d49]"
+      aria-label="AnRo, ir al inicio"
+      >An<span class="italic">R</span>o<span class="text-[#879760]">.</span></a
+    ><a
+      href="#inicio"
+      class="inline-flex items-center gap-1 text-xs transition-colors duration-200 hover:text-[#677d49]"
+      >Volver arriba <svg lucideArrowUp [size]="15" aria-hidden="true"></svg
+    ></a>
+  </div>
+</footer>
 
-@if (cartOpen()) { <app-cart-drawer (close)="closeCart()" /> }
+@if (cartOpen()) {
+  <app-cart-drawer (close)="closeCart()" />
+}
