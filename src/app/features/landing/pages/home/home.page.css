@@ -1,16 +1,46 @@
-@keyframes float {
+@keyframes float-product {
   0%,
   100% {
-    translate: 0 0;
+    transform: translate3d(0, 0, 0);
   }
   50% {
-    translate: 0 -0.5625rem;
+    transform: translate3d(0, -0.5625rem, 0);
   }
 }
 
 .floating-product {
-  animation: float 8s ease-in-out infinite;
+  animation: float-product 8s ease-in-out infinite;
 }
+
+@keyframes float-flower {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(var(--flower-rotation));
+  }
+  50% {
+    transform: translate3d(0, -0.5625rem, 0) rotate(var(--flower-rotation));
+  }
+}
+
 .floating-flower {
-  animation: float 10s ease-in-out infinite;
+  animation: float-flower 10s ease-in-out infinite;
+}
+
+.flower-one {
+  --flower-rotation: -22deg;
+  animation-delay: -2s;
+}
+
+.flower-two {
+  --flower-rotation: 20deg;
+  animation-delay: -5s;
+}
+
+.flower-delivery-left {
+  --flower-rotation: -22deg;
+}
+
+.flower-delivery-right {
+  --flower-rotation: 18deg;
+  animation-delay: -5s;
 }
