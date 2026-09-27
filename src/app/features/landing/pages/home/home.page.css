@@ -1,10 +1,10 @@
 @keyframes float-product {
   0%,
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
   }
   50% {
-    transform: translate3d(0, -0.5625rem, 0);
+    transform: translateY(-0.5625rem);
   }
 }
 
@@ -15,10 +15,10 @@
 @keyframes float-flower {
   0%,
   100% {
-    transform: translate3d(0, 0, 0) rotate(var(--flower-rotation));
+    transform: translateY(0) rotate(var(--flower-rotation));
   }
   50% {
-    transform: translate3d(0, -0.5625rem, 0) rotate(var(--flower-rotation));
+    transform: translateY(-0.5625rem) rotate(var(--flower-rotation));
   }
 }
 
@@ -28,12 +28,10 @@
 
 .flower-one {
   --flower-rotation: -22deg;
-  animation-delay: -2s;
 }
 
 .flower-two {
   --flower-rotation: 20deg;
-  animation-delay: -5s;
 }
 
 .flower-delivery-left {
@@ -42,5 +40,15 @@
 
 .flower-delivery-right {
   --flower-rotation: 18deg;
-  animation-delay: -5s;
+}
+
+@media (max-width: 47.5rem) {
+  .floating-product,
+  .floating-flower {
+    animation: none;
+  }
+
+  .floating-flower {
+    transform: rotate(var(--flower-rotation));
+  }
 }
